@@ -31,7 +31,7 @@ app.use("/user", userRoute);
 
 app.all("*", (req, res, next) => {
     console.log(`not found ${req.originalUrl}`);
-    return;
+    return ("Not found!");
 });
 
 // start listening

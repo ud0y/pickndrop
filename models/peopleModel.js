@@ -11,6 +11,9 @@ const peopleSchema = new mongoose.Schema({
         unique: true,
         lowercase: true,
     },
+    address: String,
+    arrival: String,
+    departure: String,
     role: {
         type: String,
         enum: ["user", "admin"],

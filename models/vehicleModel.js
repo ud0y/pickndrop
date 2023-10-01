@@ -15,6 +15,10 @@ const vehicleSchema = new mongoose.Schema({
         type: String,
         required: [true, "Please provide your driver name"],
     },
+    driverContact: {
+        type: Number,
+        required: [true, "Please provide drivers contact"]
+    },
     capacity: {
         type: Number,
         required: [true, "Please provide capacity of the vehicle"],
